@@ -11,7 +11,9 @@ public class HelloController {
 	
 	@GetMapping(value = "/getHello")
 	public String getHello() {
+		System.out.println("after getHello method....");
 		String message = "my first spring boot applcation";
+		System.out.println("after message..."+message);
 		return message;
 	}
 	@GetMapping(value = "/getHello2")
